@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(255, 240, 235);
+    padding: 0 30px;
+    margin-left: 20px;
+    align-items: center;
+}
+/* Navbar Section */
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: relative;
+    top: 0;
+    z-index: 999;
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(48, 58, 71));  
+    border-radius: 6px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 12px rgb(206, 206, 206);
+}
+.navbar ul li{
+    position: relative;
+}
+.navcont{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    /* background-color: rgb(218, 196, 178); */
+   
+}
+@font-face {
+    font-family: "logo";
+    src: url(fonts/Adam-Bold.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "items";
+    src: url(fonts/Adam-Medium.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+.logo{
+    color: rgb(223, 170, 145);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: logo;
+    text-align: center;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navitem{
+    height: 50px;
+}
+.items{
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+    font-family: items;
+}
+.navlinks li a:hover{
+    color: rgb(223, 170, 145);
+    transition: all 0.3s ease-in-out;
+} 
+
+/* Navbar Drop Down Section */
+.dropdown{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.navlinks li:hover .dropdown{
+    display: block;
+    left: 0;
+    top: 30%;  
+    display: inline-block;
+    background-color: rgb(255, 240, 235);  
+    border-radius: 6px;
+    padding: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 12px rgb(206, 206, 206);
+    position: relative;
+    color: rgb(255, 240, 235);
+    transition: all 0.3s ease-in-out;
+}
+.dropdown:hover{
+    transition: all 0.3s ease-in-out;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+
+}
+.dropdown.active{
+    background-color: rgb(255, 240, 235);  
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    z-index: 99;
+    height: 50vh;
+}
+
+/* MAIN SECTION */
+.clients__main{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.clients__main2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 20vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 40px;
+    font-family: logo;
+    color: rgb(223, 170, 145);
+}
+.partner{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.partner2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 50px auto;
+    height: 20vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 27px;
+    font-family: items;
+    color: rgb(223, 170, 145);
+}
+.partner3{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: -90px auto;
+    height: 20vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 40px;
+    font-size: 20px;
+    font-family: items;
+    position: relative;
+}
+p{
+    font-family: items;
+}
+/* Testimonial Section */
+.testimonial__section{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+.testimonial__clients{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 20vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 40px;
+    font-family: logo;
+    color: rgb(223, 170, 145);
+}
+.testimonial1{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-self: center;
+    margin: 10px 1px;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: items;
+}
+.test1{
+    position: relative;
+    top: -150px;
+    margin: auto 30px;
+    font-family: logo;
+}
+.testimonial2{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-self: center;
+    margin: 120px auto;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: items;
+}
+.test2{
+    position: relative;
+    top: -65px;
+    margin: auto 30px;
+    font-family: logo;
+}
+.testimonial3{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-self: center;
+    margin: -60px auto;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: items;
+    top: 0px;
+}
+.test3{
+    position: relative;
+    top: -110px;
+    margin: auto 30px;
+    font-family: logo;
+}
+.testimonial4{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-self: center;
+    margin: 130px auto;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: items;
+}
+.test4{
+    position: relative;
+    top: -110px;
+    margin: auto 30px;
+    font-family: logo;
+}
+.bx bx-male{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 10px auto;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: items;
+}
+.bx bx-female{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 10px auto;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: items;
+}
